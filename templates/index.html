@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cancer Data</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+  <style>
+    body {
+      background-image: url('https://lh3.googleusercontent.com/xWhXRtYSWvIYy5aZyl6vcpGs801rZH1WYs46HcM0oIARHKd4XZgNf_1VWbKKEiIPwWGg3nWxQn7GpxedvNHTlLALIKPQkjqSWp8PLAZqDyPL2pZfPjDmcBE9BAcnmW_bXRH8UrJtHA=w2400?source=screenshot.guru');
+      background-repeat: no-repeat;
+  background-size: cover;
+    }
+    </style>
+
+  <div class="container">
+    <div class="row">
+      <div style="background:transparent !important" class="col-md-12 jumbotron text-center">
+        <h1 style= color:black;font-size:80px;font:bolder> US Cancer Mortality Rate Dashboard</h1>
+        <p style="color:black;font-size:25px;font:bolder">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+  </div>
+  <div id="contain">
+    <div id="canvas-holder" style="background-color:#f8f4f2;width:50%;float: right; padding: 15px; padding-right: 15px;  padding-left: 15px;" \
+    class="col-xs-6">  1999 Female Cancer Mortality Rates Selected States
+    <canvas id="myChart" width="500" height="450" \
+    style=" float:left;margin-left:2em"></canvas></div>
+
+    <div id="canvas-holder" style="background-color:#faf6f6;width:50%;float: right; padding: 15px; padding-right: 15px;  padding-left: 15px;" \
+    class="col-xs-6"> 1999 Male Cancer Mortality Rates Selected States
+    <canvas id="myChart2" width="500" height="450" \
+    style="float:left;margin-left:2em"></canvas></div>
+   
+  <div class="container">
+    <div class="row">
+      <div style="padding: 15px;" class="col-md-10 col-md-offset-1">
+      <div id="myplot"></div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div style="padding: 15px;" class="col-md-12">
+      <div id="plot"></div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Select Year:</h5>
+          <select id="selDataset">
+            <option value="dataset1">1981</option>
+            <option value="dataset2">1982</option>
+            <option value="dataset3">1983</option>
+            <option value="dataset4">1984</option>
+            <option value="dataset5">1985</option>
+            <option value="dataset6">1986</option>
+            <option value="dataset7">1987</option>
+            <option value="dataset8">1988</option>
+            <option value="dataset9">1989</option>
+            <option value="dataset10">1990</option>
+            <option value="dataset11">1991</option>
+          </select>
+        </div>
+      
+          
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script> 
+  <script src="./static/js/main.js"></script>
+  
+</body>
+
+</html>
